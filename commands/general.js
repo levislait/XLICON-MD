@@ -25,7 +25,7 @@ cmd({
     },
     async(Void, citel) => {
         if(!citel.quoted) return citel.reply('Please quote any text to get link.')
-        let data = await pastebin.createPaste(citel.quoted.text, "XLICON-Pastebin")
+        let data = await pastebin.createPaste(citel.quoted.text, "Xlicon-Pastebin")
         citel.reply('_Here is your link._\n'+data)
     }
 );
@@ -137,9 +137,12 @@ cmd({
 *⭐ Total Stars:* ${data.stargazers_count} stars
 *🍽️ Forks:* ${data.forks_count} forks
 *🍁 Repo:* https://github.com/salmanytofficial/XLICON-MD
-*Group:* https://chat.whatsapp.com/ESB8e9HAS2wGlwBvzGYnLx
+_*🧩 Scan Qr:* https://replit.com/@ahil15/XLICON-MD-QR-V4?v=1_
+_*💫Support Gc:* https://chat.whatsapp.com/ESB8e9HAS2wGlwBvzGYnLx_
+_*🌊Bot Test Gc:* https://chat.whatsapp.com/H4kNueBuggV8PKQrgewSD7_
+_*☘Heroku Deploy Tutorial [Mobile]:* https://youtu.be/wfVg3QCFN68?si=85Mf4mQI51MeDsD5_
 *Deploy Your Own:*-
-citel-x.herokuapp.com`
+https://youtu.be/hH2qZyUjuF4?si=LHq5R_73IiC-L6xW_`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
@@ -179,7 +182,7 @@ cmd({
 *🌟Description:* A WhatsApp bot with rich features, build in NodeJs to make your WhatsApp enjoyable.
 *⚡Speed:* ${latensie.toFixed(4)} ms
 *🚦Uptime:* ${runtime(process.uptime())}
-*🕸Version:* 1.9.1
+*🕸Version:* 0.0.7
 *👤Owner:*  ${Config.ownername}
 *Powered by ${tlang().title}*
 `;
